@@ -258,8 +258,11 @@ class MusicIslandGestureService : AccessibilityService() {
         val enabled = MusicIslandPrefs.swipeEnabled(prefs)
         val debug = MusicIslandPrefs.showArea(prefs)
 
+        // NOTE: we used to also require statusBarVisible here, but on HyperOS the inset visibility
+        // reported to an accessibility overlay is unreliable (it kept the strip untouchable).
         val shouldCatchTouches = enabled && !replayingGesture && !landscape &&
-                (mediaActive || debug) && statusBarVisible
+                (mediaActive || debug)
+        Log.d(TAG, "updateVisibility: catch=$shouldCatchTouches media=$mediaActive sb=$statusBarVisible land=$landscape")
 
         setTouchable(lp, shouldCatchTouches)
         // The view stays VISIBLE (so it keeps receiving window-inset updates); when it must not
@@ -355,6 +358,12 @@ class MusicIslandGestureService : AccessibilityService() {
             }
         }
 
+        private fun restoreDebugColor(v: View) {
+            v.setBackgroundColor(
+                if (MusicIslandPrefs.showArea(prefs)) Color.argb(110, 255, 64, 129) else Color.TRANSPARENT
+            )
+        }
+
         @SuppressLint("ClickableViewAccessibility")
         override fun onTouch(v: View, e: MotionEvent): Boolean {
             val density = resources.displayMetrics.density
@@ -363,6 +372,7 @@ class MusicIslandGestureService : AccessibilityService() {
 
             when (e.actionMasked) {
                 MotionEvent.ACTION_DOWN -> {
+                    if (MusicIslandPrefs.showArea(prefs)) v.setBackgroundColor(Color.argb(140, 0, 200, 83))
                     downX = e.x; downY = e.y
                     downRawX = e.rawX; downRawY = e.rawY
                     downTime = e.eventTime
@@ -385,6 +395,7 @@ class MusicIslandGestureService : AccessibilityService() {
                     }
                 }
                 MotionEvent.ACTION_UP -> {
+                    restoreDebugColor(v)
                     mainHandler.removeCallbacks(longPress)
                     if (!handled) {
                         val dx = e.x - downX
@@ -396,6 +407,8 @@ class MusicIslandGestureService : AccessibilityService() {
                     }
                 }
                 MotionEvent.ACTION_CANCEL -> {
+                    restoreDebugColor(v)
+                    Log.w(TAG, "Touch CANCELLED - another window (SystemUI?) stole the gesture")
                     mainHandler.removeCallbacks(longPress)
                 }
             }
