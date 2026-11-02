@@ -20,7 +20,21 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    // [Tr1Action] Fixed debug key so every CI build has the same signature and can be
+    // installed over the previous one (CI otherwise generates a new random debug key per run).
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("tr1-debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfig = signingConfigs.getByName("debug")
+        }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
