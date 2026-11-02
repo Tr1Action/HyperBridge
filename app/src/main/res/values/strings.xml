@@ -808,4 +808,23 @@
 
     <string name="perm_display_title">Display over other apps</string>
     <string name="perm_display_onboard_desc">Required to show the custom inline reply overlay.</string>
+
+    <!-- Tr1Action: music island gestures -->
+    <string name="music_island_title">Music island gestures</string>
+    <string name="music_island_desc">Swipe the music island left/right to change track</string>
+    <string name="music_island_screen_desc">While music is playing the island stays compact and shows the song. Swipe it left for the next track and right for the previous one. Tapping still opens the island as usual.</string>
+    <string name="music_island_service_status">Gesture service</string>
+    <string name="music_island_service_on">Active</string>
+    <string name="music_island_service_off">Off – tap to enable HyperBridge in Accessibility settings</string>
+    <string name="music_island_restricted_hint">If the switch is greyed out: App info → ⋮ → Allow restricted settings, then try again.</string>
+    <string name="music_island_swipe">Swipe to change track</string>
+    <string name="music_island_swipe_desc">Left = next, right = previous</string>
+    <string name="music_island_invert">Invert direction</string>
+    <string name="music_island_invert_desc">Left = previous, right = next</string>
+    <string name="music_island_show_area">Show touch area</string>
+    <string name="music_island_show_area_desc">Highlights the swipe area in pink so you can line it up with the island</string>
+    <string name="music_island_width">Touch area width: %1$d%%</string>
+    <string name="music_island_height">Extra height: %1$d dp</string>
+    <string name="music_island_offset">Horizontal offset: %1$d dp</string>
+    <string name="music_island_a11y_desc">Lets HyperBridge detect left/right swipes on the music island to skip tracks. It only draws an invisible strip over the island and does not read screen content.</string>
 </resources>

@@ -72,6 +72,20 @@
             </intent-filter>
         </service>
 
+        <!-- Tr1Action: swipe-to-skip on the music island -->
+        <service
+            android:name=".service.MusicIslandGestureService"
+            android:label="@string/music_island_title"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/music_island_accessibility" />
+        </service>
+
         <service
             android:name=".service.WidgetOverlayService"
             android:enabled="true"

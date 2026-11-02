@@ -1,3 +1,7 @@
+> **Tr1Action fork** – changes on top of upstream HyperBridge:
+> - Music island no longer auto-expands on every track/play-pause update; it stays compact and shows the song title + artist.
+> - Swipe the music island left/right to skip tracks (Global settings → Music island gestures, needs the accessibility service enabled). Taps and long presses are passed through to the island, swiping down still opens the shade.
+
 <p align="center">
   <img src="app/src/main/ic_launcher-playstore.png" width="150" alt="HyperBridge Logo" style="border-radius: 20%;" />
 </p>

@@ -19,6 +19,7 @@ import io.github.d4viddf.hyperisland_kit.HyperAction
 import io.github.d4viddf.hyperisland_kit.HyperIslandNotification
 import io.github.d4viddf.hyperisland_kit.HyperPicture
 import io.github.d4viddf.hyperisland_kit.models.ImageTextInfoLeft
+import io.github.d4viddf.hyperisland_kit.models.ImageTextInfoRight
 import io.github.d4viddf.hyperisland_kit.models.PicInfo
 import io.github.d4viddf.hyperisland_kit.models.TextInfo
 import androidx.core.graphics.createBitmap
@@ -76,11 +77,13 @@ class MediaTranslator(context: Context) : BaseTranslator(context) {
 
         val builder = HyperIslandNotification.Builder(context, "bridge_${sbn.packageName}", title)
 
-        val finalTimeout = config.timeout ?: 0
-        builder.setEnableFloat(config.isFloat ?: false)
-        builder.setIslandConfig(timeout = finalTimeout)
+        // [Tr1Action] Music island must never auto-expand. Media notifications are
+        // re-posted on every play/pause/seek/artwork change, and with float enabled
+        // HyperOS re-opens the big card each time. Keep it compact; the user can
+        // still tap the island to expand it manually.
+        builder.setEnableFloat(false)
         builder.setShowNotification(config.isShowShade ?: true)
-        builder.setIslandFirstFloat(config.isFloat ?: false)
+        builder.setIslandFirstFloat(false)
 
 
         // --- RESOURCES ---
@@ -145,15 +148,22 @@ class MediaTranslator(context: Context) : BaseTranslator(context) {
         // --- Island (Collapsed) ---
         builder.setSmallIsland(if (albumArt != null) artKey else picKey)
 
+        // [Tr1Action] Compact island: album art on the left, song title + artist on the right
         builder.setBigIslandInfo(
             left = ImageTextInfoLeft(
                 type = 1,
                 picInfo = PicInfo(type = 1, pic = if (albumArt != null) artKey else picKey),
                 textInfo = TextInfo(title = "", content = "")
+            ),
+            right = ImageTextInfoRight(
+                type = 1,
+                picInfo = PicInfo(type = 1, pic = "hidden_pixel"),
+                textInfo = TextInfo(title = title, content = artist)
             )
         )
-        builder.setIslandConfig(highlightColor = containerColorHex, expandedTimeMs = config.floatTimeout)
-        builder.setHideDeco(true).setReopen(true).setShowSmallIcon(true)
+        // No timeout: the music island stays (compact) for as long as the media notification exists.
+        builder.setIslandConfig(timeout = null, highlightColor = containerColorHex)
+        builder.setHideDeco(true).setReopen(false).setShowSmallIcon(true)
 
         return HyperIslandData(builder.buildResourceBundle(), builder.buildJsonParam())
     }

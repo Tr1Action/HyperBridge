@@ -643,4 +643,23 @@
     <string name="reply_hint">Reply...</string>
     <string name="perm_display_title">Display over other apps</string>
     <string name="perm_display_onboard_desc">Required to show the custom inline reply overlay.</string>
+
+    <!-- Tr1Action: music island gestures -->
+    <string name="music_island_title">Müzik adası hareketleri</string>
+    <string name="music_island_desc">Şarkı değiştirmek için müzik adasını sola/sağa kaydır</string>
+    <string name="music_island_screen_desc">Müzik çalarken ada küçük kalır ve çalan şarkıyı gösterir. Sonraki şarkı için sola, önceki için sağa kaydır. Dokununca ada her zamanki gibi açılır.</string>
+    <string name="music_island_service_status">Hareket servisi</string>
+    <string name="music_island_service_on">Açık</string>
+    <string name="music_island_service_off">Kapalı – Erişilebilirlik ayarlarından HyperBridge\'i açmak için dokun</string>
+    <string name="music_island_restricted_hint">Anahtar gri görünüyorsa: Uygulama bilgisi → ⋮ → Kısıtlı ayarlara izin ver, sonra tekrar dene.</string>
+    <string name="music_island_swipe">Kaydırarak şarkı değiştir</string>
+    <string name="music_island_swipe_desc">Sola = sonraki, sağa = önceki</string>
+    <string name="music_island_invert">Yönü ters çevir</string>
+    <string name="music_island_invert_desc">Sola = önceki, sağa = sonraki</string>
+    <string name="music_island_show_area">Dokunma alanını göster</string>
+    <string name="music_island_show_area_desc">Kaydırma alanını pembe gösterir, adayla hizalamak için</string>
+    <string name="music_island_width">Dokunma alanı genişliği: %%%1$d</string>
+    <string name="music_island_height">Ek yükseklik: %1$d dp</string>
+    <string name="music_island_offset">Yatay kaydırma: %1$d dp</string>
+    <string name="music_island_a11y_desc">HyperBridge\'in müzik adasındaki sola/sağa kaydırmaları algılayıp şarkı değiştirmesini sağlar. Sadece adanın üstüne görünmez bir şerit çizer, ekran içeriğini okumaz.</string>
 </resources>

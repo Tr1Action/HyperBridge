@@ -71,8 +71,12 @@ fun mainNavGraph(
             onIslandSettingsClick = { navigator.navigate(Screen.IslandSettings) },
             onEngineSettingsClick = { navigator.navigate(Screen.EngineSettings) },
             onDndSettingsClick = { navigator.navigate(Screen.DndSettings) },
+            onMusicIslandClick = { navigator.navigate(Screen.MusicIslandSettings) },
             onPermanentIslandClick = { navigator.navigate(Screen.PermanentIslandConfig) }
         )
+    }
+    entry<Screen.MusicIslandSettings> {
+        com.d4viddf.hyperbridge.ui.screens.settings.MusicIslandSettingsScreen(onBack = { navigator.goBack() })
     }
     entry<Screen.DndSettings> {
         com.d4viddf.hyperbridge.ui.screens.settings.DndSettingsScreen(onBack = { navigator.goBack() })
