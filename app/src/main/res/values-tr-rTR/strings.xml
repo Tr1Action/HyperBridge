@@ -662,4 +662,7 @@
     <string name="music_island_height">Ek yükseklik: %1$d dp</string>
     <string name="music_island_offset">Yatay kaydırma: %1$d dp</string>
     <string name="music_island_a11y_desc">HyperBridge\'in müzik adasındaki sola/sağa kaydırmaları algılayıp şarkı değiştirmesini sağlar. Sadece adanın üstüne görünmez bir şerit çizer, ekran içeriğini okumaz.</string>
+    <string name="bulk_enable_title">Tüm uygulamaları aç</string>
+    <string name="bulk_disable_title">Tüm uygulamaları kapat</string>
+    <string name="bulk_toggle_desc">Şu an listelenen %1$d uygulamaya uygulanır (arama ve kategori filtresi dikkate alınır).</string>
 </resources>

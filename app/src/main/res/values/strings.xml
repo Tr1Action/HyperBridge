@@ -827,4 +827,7 @@
     <string name="music_island_height">Extra height: %1$d dp</string>
     <string name="music_island_offset">Horizontal offset: %1$d dp</string>
     <string name="music_island_a11y_desc">Lets HyperBridge detect left/right swipes on the music island to skip tracks. It only draws an invisible strip over the island and does not read screen content.</string>
+    <string name="bulk_enable_title">Enable all apps</string>
+    <string name="bulk_disable_title">Disable all apps</string>
+    <string name="bulk_toggle_desc">This applies to the %1$d apps currently listed (respects search and category filter).</string>
 </resources>

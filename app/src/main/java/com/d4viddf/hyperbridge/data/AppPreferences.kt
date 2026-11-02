@@ -175,6 +175,13 @@ class AppPreferences(context: Context) {
         save(SettingsKeys.ALLOWED_PACKAGES, newSet.serialize())
     }
 
+    /** [Tr1Action] Enable/disable many apps in a single write. */
+    suspend fun setAppsEnabled(packageNames: Collection<String>, isEnabled: Boolean) {
+        val currentSet = dao.getSetting(SettingsKeys.ALLOWED_PACKAGES).deserializeSet()
+        val newSet = if (isEnabled) currentSet + packageNames else currentSet - packageNames.toSet()
+        save(SettingsKeys.ALLOWED_PACKAGES, newSet.serialize())
+    }
+
     // ========================================================================
     //                        THEME ENGINE
     // ========================================================================

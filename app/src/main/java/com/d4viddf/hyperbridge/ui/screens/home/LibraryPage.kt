@@ -17,6 +17,15 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.SearchOff
 import androidx.compose.material.icons.rounded.Settings
+import androidx.compose.material.icons.rounded.DoneAll
+import androidx.compose.material.icons.rounded.RemoveDone
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.HorizontalDivider
@@ -60,6 +69,26 @@ fun LibraryPage(
     val sortOption = viewModel.librarySort.collectAsState().value
 
     val isRefreshing = isLoading && apps.isNotEmpty()
+
+    // [Tr1Action] Select all / deselect all for the currently listed (filtered) apps
+    var showBulkDialog by remember { mutableStateOf(false) }
+    val allEnabled = apps.isNotEmpty() && apps.all { it.isBridged }
+    if (showBulkDialog) {
+        AlertDialog(
+            onDismissRequest = { showBulkDialog = false },
+            title = { Text(stringResource(if (allEnabled) R.string.bulk_disable_title else R.string.bulk_enable_title)) },
+            text = { Text(stringResource(R.string.bulk_toggle_desc, apps.size)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    viewModel.setAppsEnabled(apps.map { it.packageName }, !allEnabled)
+                    showBulkDialog = false
+                }) { Text(stringResource(android.R.string.ok)) }
+            },
+            dismissButton = {
+                TextButton(onClick = { showBulkDialog = false }) { Text(stringResource(android.R.string.cancel)) }
+            }
+        )
+    }
     val pullState = rememberPullToRefreshState()
 
     Scaffold(
@@ -69,6 +98,12 @@ fun LibraryPage(
             TopAppBar(
                 title = { Text(stringResource(R.string.app_name),style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold) },
                 actions = {
+                    IconButton(onClick = { showBulkDialog = true }, enabled = apps.isNotEmpty()) {
+                        Icon(
+                            if (allEnabled) Icons.Rounded.RemoveDone else Icons.Rounded.DoneAll,
+                            stringResource(if (allEnabled) R.string.bulk_disable_title else R.string.bulk_enable_title)
+                        )
+                    }
                     Surface(
                     modifier = Modifier
                         .size(40.dp)

@@ -211,6 +211,13 @@ class AppListViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
+    /** [Tr1Action] Bulk toggle for the "select all" button in the library. */
+    fun setAppsEnabled(packageNames: List<String>, isEnabled: Boolean) {
+        viewModelScope.launch {
+            preferences.setAppsEnabled(packageNames, isEnabled)
+        }
+    }
+
     // Standard non-flow getter if needed by other parts of the app
     suspend fun getAppConfig(packageName: String) = preferences.getAppConfigFlow(packageName).first()
 
