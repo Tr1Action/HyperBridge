@@ -1,0 +1,832 @@
+<resources>
+    <string name="app_name">Hyper Bridge</string>
+
+    <string name="back">Geri</string>
+    <string name="next">İleri</string>
+    <string name="finish">Bitir</string>
+    <string name="done">Tamam</string>
+    <string name="logo_desc">Uygulama logosu</string>
+    <string name="settings">Ayarlar</string>
+    <string name="configure">Yapılandır</string>
+    <string name="clear">Temizle</string>
+    <string name="sort_order">Sıralama</string>
+
+    <string name="welcome_title">Hyper Bridge\'e\nhoş geldin</string>
+    <string name="welcome_subtitle">HyperIsland\'ı HyperOS deneyimine sorunsuzca ekle.</string>
+    <string name="get_started">Başla</string>
+
+    <string name="how_it_works">Nasıl çalışır</string>
+    <string name="how_it_works_desc">Sevdiğin uygulamaları seç (Spotify, Haritalar, Zamanlayıcı). HyperBridge bildirimlerini şık bir HyperIsland\'a dönüştürür.</string>
+    <string name="beta_warning">Not: Bu uygulama Beta sürümünde. Hatalarla veya yanlış görsel bilgilerle karşılaşabilirsin.</string>
+
+    <string name="device_compatible">Cihaz uyumlu</string>
+    <string name="unsupported_device">Desteklenmeyen cihaz</string>
+    <string name="compatible_msg">Cihazın HyperOS/MIUI çalıştırıyor görünüyor. Her şey hazır!</string>
+
+    <string name="show_island">Adayı göster</string>
+    <string name="perm_post_desc">Ekranında \'Ada\' bildirimini gösterebilmemiz için izin gerekiyor.</string>
+    <string name="perm_granted">İzin verildi</string>
+    <string name="allow_notifications">Bildirimlere izin ver</string>
+
+    <string name="read_data">Bildirimleri oku</string>
+    <string name="perm_listener_desc">Uygulamalarını adaya bağlamak için bildirimlerini (Müzik, Haritalar, Zamanlayıcılar) okumamız gerekiyor.</string>
+    <string name="open_settings">Ayarları aç</string>
+
+    <string name="optimization_desc">HyperOS arka plandaki uygulamaları kapatır. Adanın açık kalması için Otomatik başlatma ve Kısıtlama yok ayarlarını aç.</string>
+    <string name="enable_autostart">Otomatik başlatmaya izin ver</string>
+    <string name="set_battery_no_restrictions">Kısıtlamaları kaldır</string>
+
+    <string name="tab_active">Aktif</string>
+    <string name="tab_library">Kitaplık</string>
+    <string name="search_hint">Uygulama ara…</string>
+
+    <string name="no_active_bridges">Aktif köprü yok</string>
+    <string name="no_active_bridges_desc">Uygulama açmak için Kitaplık\'a git.</string>
+    <string name="no_apps_found">Uygulama bulunamadı</string>
+
+    <string name="version_template">Sürüm %s</string>
+    <string name="developer_credit">D4vidDf tarafından</string>
+
+    <string name="group_configuration">Yapılandırma</string>
+    <string name="system_setup">Sistem kurulumu</string>
+    <string name="system_setup_subtitle">İzinleri ve pili düzelt</string>
+
+    <!-- Permanent Island -->
+    <string name="permanent_island_title">Kalıcı ada</string>
+    <string name="permanent_island_desc">Aktif bildirim yokken Dinamik Ada\'yı ekranda sürekli görünür tut.</string>
+    <string name="permanent_island_screen_desc">Açıkken ekranında sürekli boş bir Dinamik Ada görünür. Gerçek bildirim gelince otomatik gizlenir, tüm bildirimler temizlenince yeniden görünür. Bildirim panelinde görünmez.</string>
+    <string name="permanent_island_width">Ada genişliği</string>
+    <string name="permanent_island_hide_landscape">Yatayda gizle</string>
+
+    <string name="group_about">Hakkında</string>
+    <string name="special_thanks">Özel teşekkürler</string>
+    <string name="xmsf_workaround_credit_title">XMSF çözümü</string>
+    <string name="xmsf_workaround_credit_subtitle">Araştırma: Stardawn (星间晞)</string>
+    <string name="developer">Geliştirici</string>
+    <string name="developer_subtitle">d4viddf.com\'u ziyaret et</string>
+    <string name="source_code">Kaynak kodu</string>
+    <string name="source_code_subtitle">GitHub deposu</string>
+    <string name="licenses">Açık kaynak lisansları</string>
+    <string name="licenses_subtitle">Üçüncü taraf yazılımlar</string>
+    <string name="footer_made_with_love">İspanya\'da ❤️ ile yapıldı</string>
+
+    <string name="app_health_desc">Uygulamanın arka planda doğru çalışması için tüm kontrollerin yeşil olduğundan emin ol.</string>
+    <string name="req_permissions">Gerekli izinler</string>
+    <string name="notif_access">Bildirim erişimi</string>
+    <string name="notif_access_desc">Uygulama olaylarını okumak için gerekli</string>
+    <string name="device_optimization">Cihaz optimizasyonu</string>
+    <string name="xiaomi_autostart">Xiaomi otomatik başlatma</string>
+    <string name="battery_unrestricted">Pil kısıtlaması yok</string>
+    <string name="battery_desc">Sistemin uygulamayı kapatmasını engeller</string>
+    <string name="recents_note">Not: Uygulamayı \'Son uygulamalar\' ekranında da kilitle.</string>
+    <string name="status_active">Aktif</string>
+
+    <string name="cat_all">Tümü</string>
+    <string name="cat_music">Müzik</string>
+    <string name="cat_nav">Navigasyon</string>
+    <string name="cat_timer">Verimlilik</string>
+    <string name="cat_other">Diğer</string>
+
+    <string name="type_standard">Genel uyarılar</string>
+    <string name="type_message">Mesajlar ve sohbetler</string>
+    <string name="type_progress">İlerleme ve görevler</string>
+    <string name="type_download">İndirmeler</string>
+    <string name="type_media">Müzik ve medya</string>
+    <string name="type_nav">Haritalar ve GPS</string>
+    <string name="type_call">Aramalar</string>
+    <string name="type_timer">Zamanlayıcılar ve alarmlar</string>
+
+    <string name="download_complete">İndirme tamamlandı</string>
+    <string name="downloading">İndiriliyor</string>
+    <string name="maps_title">Haritalar</string>
+
+    <string-array name="progress_finish_keywords">
+        <item>downloaded</item>
+        <item>completed</item>
+        <item>finished</item>
+        <item>installed</item>
+        <item>done</item>
+        <item>successful</item>
+        <item>succeeded</item>
+        <item>indirildi</item>
+        <item>tamamlandı</item>
+        <item>bitti</item>
+        <item>yüklendi</item>
+        <item>başarılı</item>
+    </string-array>
+
+    <string name="status_now_playing">Şimdi çalıyor</string>
+
+    <string name="fallback_timer">Zamanlayıcı</string>
+
+    <string name="whats_new_title">%s sürümündeki yenilikler</string>
+    <string name="awesome">Harika!</string>
+
+
+    <string name="island_behavior">Ada davranışı</string>
+    <string name="limit_strategy">Sınır stratejisi</string>
+    <string name="limit_desc">9 adaya ulaşınca ne olsun?</string>
+    <string name="mode_fcfs_title">İlk gelen alır</string>
+    <string name="mode_fcfs_desc">İlk 9 uygulamayı tutar. Yer açılana kadar yeni uygulamalar yok sayılır.</string>
+    <string name="mode_recent_title">En yeni (varsayılan)</string>
+    <string name="mode_recent_desc">Yeni bildirimler en eskilerin yerini alır.</string>
+    <string name="mode_priority_title">Özel öncelik</string>
+    <string name="mode_priority_desc">Hangi türlerin (ör. Aramalar) daha önemli olduğunu belirle.</string>
+    <string name="priority_order">Öncelik sırası</string>
+    <string name="priority_order_desc">Yüksek öncelik (üstte) düşük önceliğin (altta) yerini alır.</string>
+    <string name="configure_order">Uygulama sırasını ayarla</string>
+
+    <string name="global_settings">Genel ayarlar</string>
+    <string name="island_appearance">Ada görünümü</string>
+    <string name="setting_float">Açılır bildirim</string>
+    <string name="setting_float_desc">Adaya küçülmeden önce tam bildirim afişini kısa süre göster.</string>
+    <string name="setting_float_timeout_desc">Açılır bildirimin ekranda kalma süresi.</string>
+
+    <string name="setting_shade">Bildirim paneli</string>
+    <string name="setting_shade_desc">Bildirimi bildirim panelinde de göster. Kapalıysa sadece ada olarak görünür.</string>
+
+    <string name="seconds_suffix">%ds</string>
+
+    <string name="use_global_default">Genel varsayılanları kullan</string>
+
+    <string-array name="nav_arrival_keywords">
+        <item>arrival</item>
+        <item>arrive</item>
+        <item>eta</item>
+        <item>reaching</item>
+        <item>destination</item>
+        <item>varış</item>
+        <item>varılacak</item>
+        <item>hedef</item>
+    </string-array>
+
+    <string name="version_history">Sürüm geçmişi</string>
+
+    <string name="title_0_2_0">Bilgi güncellemesi</string>
+    <string name="changelog_0_2_0">        • &lt;b&gt;Advanced Progress:&lt;/b&gt; Added support for \"Step Progress\" (e.g. 1 of 3) and progress bars with icons inside the notification shade.\n
+        • &lt;b&gt;Priority System:&lt;/b&gt; New \"Island Behavior\" settings. Choose between \"Most Recent\", \"First Come\", or a custom \"App Priority\" list.\n
+        • &lt;b&gt;Smart Filtering:&lt;/b&gt; Improved detection of duplicate notifications and grouped downloads.\n
+        • &lt;b&gt;Visual Improvements:&lt;/b&gt; Fixed layout issues with Navigation instructions.\n
+        • &lt;b&gt;Per-App Config:&lt;/b&gt; Customize Timeout and Floating behavior per app.
+    </string>
+
+    <string name="title_0_1_0">Expressive güncellemesi</string>
+    <string name="changelog_0_1_0">        • &lt;b&gt;Major UI Overhaul:&lt;/b&gt; New Material 3 Expressive design with smooth animations.\n
+        • &lt;b&gt;Better Island:&lt;/b&gt; Text now appears on the right side. Added Green Tick for finished downloads.\n
+        • &lt;b&gt;Per-App Config:&lt;/b&gt; Select specific notification types (Music, Maps, Calls) per app.\n
+        • &lt;b&gt;Smart Filters:&lt;/b&gt; Blocks duplicate notifications and saves battery.\n
+        • &lt;b&gt;New Library:&lt;/b&gt; Filter apps by category and sort order.\n
+        • &lt;b&gt;Localization:&lt;/b&gt; Added Spanish support.
+    </string>
+
+    <string name="priority_edu_title">Adayı kontrol et</string>
+    <string name="priority_edu_desc">Aynı anda birden çok bildirim aktifken adanın nasıl davranacağını seç.</string>
+
+    <string name="badge_new">YENİ</string>
+
+    <string name="nav_layout_title">Navigasyon düzeni</string>
+    <string name="nav_layout_desc">Bilgilerin nerede görüneceğini seç</string>
+    <string name="left_content">Sol taraf</string>
+    <string name="right_content">Sağ taraf</string>
+
+    <string name="nav_content_instruction">Yönerge</string>
+    <string name="nav_content_distance">Mesafe</string>
+    <string name="nav_content_eta">Varış saati</string>
+    <string name="nav_content_distance_eta">Mesafe ve süre</string>
+    <string name="nav_content_none">Boş</string>
+
+    <string name="channel_active_islands">Aktif adalar</string>
+
+    <string name="cd_enable_type">%s bildirimlerini aç</string>
+    <string name="cd_disable_type">%s bildirimlerini kapat</string>
+    <string name="cd_nav_edit">Navigasyon düzenini düzenle</string>
+    <string name="cd_app_state_active">Aktif</string>
+    <string name="cd_app_state_inactive">Pasif</string>
+
+    <string name="cd_move_up">Öğeyi yukarı taşı</string>
+    <string name="cd_move_down">Öğeyi aşağı taşı</string>
+    <string name="cd_drag_handle">Sürükleme tutamacı. Sıralamak için iki kez dokunup basılı tut veya taşıma eylemlerini kullan.</string>
+    <string name="cd_app_icon">%s uygulama simgesi</string>
+    <string name="cd_nav_preview">Navigasyon önizlemesi: solda %1$s, sağda %2$s</string>
+    <string name="cd_expand_changelog">Sürüm ayrıntılarını aç</string>
+    <string name="cd_collapse_changelog">Sürüm ayrıntılarını kapat</string>
+
+    <string name="nav_preview_instruction">Sağa dön</string>
+    <string name="nav_preview_distance">200 m</string>
+    <string name="nav_preview_time">10:30</string>
+
+    <string name="blocked_terms">Engellenen kelimeler</string>
+    <string name="blocked_terms_desc">Bu kelimeleri içeren bildirimler yok sayılır.</string>
+    <string name="add_blocked_word">Kelime ekle (ör. Spoiler)</string>
+    <string name="add">Ekle</string>
+    <string name="remove">Kaldır</string>
+    <string name="spoiler_subtitle">Spoiler korumasını ve filtreleri yönet</string>
+
+    <string name="active_notifications_title">Bildirim türleri</string>
+    <string name="active_notifications_subtitle">%d aktif</string>
+    <string name="appearance_use_defaults_desc">Animasyon hızı ve açılır davranış için sistem varsayılanları kullanılıyor.</string>
+    <string name="blocked_terms_active_count">%d kural aktif</string>
+
+    <string name="global_rules">Genel kurallar</string>
+    <string name="app_specific_rules">Uygulamaya özel kurallar</string>
+    <string name="manage_app_rules_desc">Belirli uygulamalar için filtreleri özelleştir</string>
+    <string name="blocked_terms_count">%d kelime engellendi</string>
+    <string name="no_active_rules">Aktif kural yok</string>
+
+    <string name="setup_health_title">Sistem uyumluluğu</string>
+    <string name="req_hyperos">HyperOS 3.0+ (Android 15+) gerekir</string>
+    <string name="req_xiaomi">Xiaomi/Redmi/Poco cihaz gerekir</string>
+
+    <string name="warning_cn_rom_title">Çin ROM\'u algılandı</string>
+    <string name="warning_cn_rom_desc">Cihazın Çin yazılımı çalıştırıyor görünüyor. Xiaomi, CN ROM\'larda bildirim altyapısını büyük ölçüde değiştiriyor. Özellikler kararsız olabilir veya hiç çalışmayabilir.</string>
+
+    <string name="shizuku_workaround_title">Shizuku çözümünü aç</string>
+    <string name="shizuku_enable_workaround">Çözümü aç</string>
+    <string name="shizuku_workaround_desc">CN ROM kullanıyorsan bildirimlerin doğru çalışması için Shizuku çözümünü açmalısın.</string>
+    <string name="shizuku_status_running">Shizuku çalışıyor</string>
+    <string name="shizuku_permission_granted">İzin verildi</string>
+    <string name="shizuku_permission_denied">İzin reddedildi</string>
+    <string name="shizuku_request_permission">Shizuku izni ver</string>
+    <string name="shizuku_not_installed">Shizuku uygulaması kurulu değil veya çalışmıyor. Önce Shizuku\'yu kurup başlat.</string>
+
+    <string name="system_version">Sistem sürümü</string>
+
+    <string name="call_incoming">Gelen arama</string>
+    <string name="call_ongoing">Aktif arama</string>
+
+    <string-array name="call_keywords_hangup">
+        <item>hang</item>
+        <item>end</item>
+        <item>decline</item>
+        <item>reject</item>
+        <item>kapat</item>
+        <item>bitir</item>
+        <item>reddet</item>
+        <item>sonlandır</item>
+    </string-array>
+    <string-array name="call_keywords_answer">
+        <item>answer</item>
+        <item>accept</item>
+        <item>cevapla</item>
+        <item>yanıtla</item>
+        <item>kabul</item>
+    </string-array>
+    <string-array name="call_keywords_speaker">
+        <item>speaker</item>
+        <item>audio</item>
+        <item>hoparlör</item>
+        <item>ses</item>
+    </string-array>
+
+    <string name="title_0_3_0">Global güncelleme</string>
+    <string name="changelog_0_3_0">        <b>Hidden Notification 👻</b>\n
+        New option to hide notifications from the system panel while keeping the Island active. Check Global Settings!\n\n
+        <b>New Languages 🌍</b>\n
+        Special thanks to our community for these translations:\n
+        • 🇧🇷 Portuguese (Brazil)\n
+        • 🇵🇱 Polish\n
+        • 🇰🇷 Korean\n\n
+        • 🇺🇦 Ukranian\n\n
+        <b>Navigation Customization 🧭</b>\n
+        You can now choose what information appears on the Left and Right sides of the Navigation Island (Distance, ETA, Instruction).\n\n
+        <b>Spoiler Protection 🛡️</b>\n
+        New \"Blocked Terms\" feature. Define words globally or per-app to prevent specific notifications from showing up on the Island.\n\n
+        <b>Call Improvements 📞</b>\n
+        Improved detection logic to support a wider range of VoIP and Dialer applications.\n\n
+        <b>Fixes &amp; Improvements 🛠️</b>\n
+        • Fixed a critical bug where the app would get stuck loading after a reboot.\n
+        • Fixed notifications sometimes showing raw package names (e.g. \"com.google...\") instead of content.\n
+        • Redesigned App Configuration sheet for better usability.\n
+        • Improved Compatibility Check screen with detailed device info.
+    </string>
+
+    <string name="privacy_title">%100 çevrimdışı ve güvenli</string>
+    <string name="privacy_desc">Hyper Bridge her şeyi doğrudan telefonunun işlemcisinde işler.\n\nİnternet erişimi GEREKTİRMEZ; bildirimlerin ve kişisel verilerin cihazından hiç çıkmaz.</string>
+
+    <string name="language">Dil</string>
+    <string name="language_desc">Uygulama dilini değiştir</string>
+    <string name="system_default">Sistem varsayılanı</string>
+    <string name="save">Kaydet</string>
+
+    <string name="backup_restore_title">Yedekle ve geri yükle</string>
+    <string name="backup_section_title">Verileri yönet</string>
+    <string name="backup_options_subtitle">İşleme dahil edilecek verileri seç</string>
+
+    <string name="option_app_settings">Uygulama ayarları</string>
+    <string name="option_app_settings_desc">Kurulum durumu, tema, davranış modları</string>
+
+    <string name="option_blocklist">Engel listesi veritabanı</string>
+    <string name="option_blocklist_desc">Engellediğin kelimeler ve uygulamalar</string>
+
+    <string name="option_priorities">Öncelik kuralları</string>
+    <string name="option_priorities_desc">Özel bildirim önceliği yapılandırmaları</string>
+
+    <string name="action_export">Yedek oluştur</string>
+    <string name="action_import">Yedeği geri yükle</string>
+
+    <string name="export_success">Yedek başarıyla kaydedildi</string>
+    <string name="export_failed">Dışa aktarma başarısız: %s</string>
+    <string name="import_success">Veriler başarıyla geri yüklendi</string>
+    <string name="import_failed">İçe aktarma başarısız: %s</string>
+
+    <string name="autostart_manual_check">Durum otomatik doğrulanamıyor.\nServisin düzgün çalışması için bunu elle kontrol et</string>
+
+    <string name="backup_info_title">Yedek bilgisi</string>
+    <string name="backup_meta_date">Tarih</string>
+    <string name="backup_meta_device">Cihaz</string>
+    <string name="backup_meta_version">Sürüm</string>
+    <string name="backup_meta_keys">Toplam öğe</string>
+    <string name="backup_empty_suffix"> (Boş)</string>
+    <string name="action_restore_selected">Seçili verileri geri yükle</string>
+
+    <string name="optimization_title">Cihaz optimizasyonu</string>
+
+    <string name="privacy_card_title">Önce çevrimdışı</string>
+    <string name="privacy_card_desc">İnternet bağlantısı gerekmez.</string>
+
+    <string name="title_0_3_1">Yedekleme ve çoklu dil güncellemesi</string>
+    <string name="changelog_0_3_1">        <b>Backup &amp; Restore 📦</b>\n
+        New power-user feature! Securely export your settings, blocklists, and app priorities to a .hbr file and restore them anytime.\n\n
+        <b>New Languages 🌍</b>\n
+        Added support for:\n
+        • 🇩🇪 German\n
+        • 🇷🇺 Russian\n
+        • 🇺🇦 Ukrainian (Improved)\n
+        <i>Plus: A new in-app Language Selector to change languages without affecting your system settings.</i>\n\n
+        <b>Visual Refresh 🎨</b>\n
+        The app has been updated with <b>Material 3 Expressive</b> design. Enjoy larger headers, rounder shapes, and a smoother experience.\n\n
+        <b>Privacy &amp; Setup 🛡️</b>\n
+        • Improved Onboarding with a dedicated Privacy page clarifying offline-first architecture.\n
+        • Stricter compatibility checks to ensure the best experience on HyperOS 3.0.\n\n
+        <b>Fixes 🛠️</b>\n
+        • Fixed a critical issue where settings were lost after device reboot (migrated to database).\n
+        • Fixed \"Exit\" button in Navigation island showing as an icon instead of text.\n
+        • Fixed App Icon loading in Settings.\n
+    </string>
+
+    <string name="close">Kapat</string>
+    <string name="search">Ara</string>
+    <string name="widget_updated_toast">Widget güncellendi</string>
+    <string name="widget_settings_error">Bu widget\'ın ayarları düzenlenemiyor</string>
+
+    <string name="widget_picker_title">Widget ekle</string>
+    <string name="search_apps_placeholder">Uygulama ara...</string>
+    <plurals name="widget_count_fmt">
+        <item quantity="one">%d widget</item>
+        <item quantity="other">%d widget</item>
+    </plurals>
+
+    <string name="widget_config_title">Widget\'ı yapılandır</string>
+    <string name="widget_settings_button">Widget ayarları</string>
+
+    <string name="config_tab_appearance">Görünüm</string>
+    <string name="config_tab_behavior">Davranış</string>
+
+    <string name="config_render_mode_label">Çizim modu</string>
+    <string name="config_container_size_label">Kutu boyutu</string>
+
+    <string name="config_shade_title">Panelde göster</string>
+    <string name="config_shade_desc">Bildirim panelinde görünür</string>
+
+    <string name="config_timeout_title">Otomatik kapat</string>
+    <string name="config_timeout_desc">Belirli süre sonra adayı kapat</string>
+    <plurals name="config_timeout_fmt">
+        <item quantity="one">%d saniye</item>
+        <item quantity="other">%d saniye</item>
+    </plurals>
+
+    <string name="config_refresh_title">Otomatik yenile</string>
+    <string name="config_refresh_desc">Görüntüyü düzenli aralıklarla güncelle</string>
+    <plurals name="config_refresh_fmt">
+        <item quantity="one">Her dakika</item>
+        <item quantity="other">Her %d dakikada</item>
+    </plurals>
+    <string name="config_refresh_warning">Daha sık yenileme daha çok pil harcar.</string>
+
+    <string name="render_interactive_label">Etkileşimli</string>
+    <string name="render_interactive_desc">Düğmeler çalışır. Müzik ve kontroller için en iyisi.</string>
+    <string name="render_snapshot_label">Anlık görüntü</string>
+    <string name="render_snapshot_desc">Boş listeleri düzeltir. Takvim ve Gmail için en iyisi.</string>
+
+    <string name="size_original">Orijinal</string>
+    <string name="size_small">Küçük (100dp)</string>
+    <string name="size_medium">Orta (180dp)</string>
+    <string name="size_large">Büyük (280dp)</string>
+    <string name="size_xlarge">Çok büyük (380dp)</string>
+
+    <string name="app_uninstalled_badge">Kaldırıldı</string>
+    <string name="settings_action">Ayarlar</string>
+
+    <string name="saved_widgets_title">Kayıtlı widget\'lar</string>
+    <string name="no_saved_widgets">Kayıtlı widget bulunamadı.</string>
+    <string name="widget_id_fmt">Widget #%d</string>
+    <string name="show_on_island">Adada göster</string>
+
+    <string name="theme_installer_analyzing">Tema paketi inceleniyor...</string>
+    <string name="theme_installer_success_title">Tema hazır</string>
+    <string name="theme_installer_author">Hazırlayan: %s</string>
+    <string name="theme_installer_version">Sürüm %d</string>
+    <string name="theme_installer_apply_question">Bu temayı şimdi HyperBridge\'e uygulamak ister misin?</string>
+    <string name="theme_installer_action_apply">Temayı uygula</string>
+    <string name="theme_installer_action_later">Sonra için kaydet</string>
+    <string name="theme_installer_error_title">İçe aktarma başarısız</string>
+    <string name="theme_installer_error_generic">Tema dosyası doğrulanamadı.</string>
+    <string name="theme_installer_btn_close">Kapat</string>
+    <string name="theme_manager_title">Temalarım</string>
+    <string name="theme_manager_cd_add">Yeni tema ekle</string>
+
+    <string name="theme_card_author_format">%s tarafından</string>
+    <string name="theme_card_cd_active">Aktif tema</string>
+    <string name="theme_card_cd_delete">Temayı sil</string>
+
+    <string name="theme_system_default_title">Sistem varsayılanı</string>
+    <string name="theme_system_default_desc">Standart görünüm</string>
+
+    <string name="theme_sheet_title">Yeni tema ekle</string>
+
+    <string name="theme_sheet_action_create">Yeni tema oluştur</string>
+    <string name="theme_sheet_action_find">Ara</string>
+    <string name="theme_action_import_short">İçe aktar</string>
+    <string name="theme_card_action_edit">Düzenle</string>
+    <string name="theme_card_action_export">Dışa aktar</string>
+
+    <string name="creator_title_new">Tema oluştur</string>
+    <string name="creator_title_edit">Temayı düzenle</string>
+    <string name="creator_nav_colors">Renkler</string>
+    <string name="creator_nav_icons">Simgeler ve şekiller</string>
+    <string name="creator_nav_calls">Arama stili</string>
+    <string name="creator_nav_apps">Uygulama ayarları</string>
+    <string name="creator_action_save">Kaydet</string>
+    <string name="creator_btn_edit_info">Tema bilgisini düzenle</string>
+    <string name="creator_sub_colors">Paletler ve kontrast</string>
+    <string name="creator_sub_icons">Şekil ve boşluk</string>
+    <string name="creator_sub_calls">Cevapla ve reddet düğmeleri</string>
+    <string name="creator_sub_apps">Uygulamaya özel ayarlar</string>
+
+    <string name="meta_title">Tema bilgisi</string>
+    <string name="meta_label_name">Tema adı</string>
+    <string name="meta_label_author">Hazırlayan adı</string>
+    <string name="meta_action_done">Tamam</string>
+
+    <string name="colors_tab_presets">Hazır</string>
+    <string name="colors_tab_custom">Özel</string>
+    <string name="colors_label_presets">Hazır renkler</string>
+    <string name="colors_label_use_app_colors">Uygulama renklerini kullan</string>
+    <string name="colors_desc_use_app_colors">Renkleri kurulu uygulamalardan al</string>
+    <string name="colors_label_custom_title">Özel renk</string>
+    <string name="colors_cd_add_custom">Özel renk ekle</string>
+    <string name="colors_dialog_title">Renk seç</string>
+    <string name="colors_action_done">Tamam</string>
+
+    <string name="icons_tab_style">Stil</string>
+    <string name="icons_tab_assets">Simgeler</string>
+    <string name="icons_tab_shape">Şekil</string>
+    <string name="icons_label_size">Simge boyutu</string>
+    <string name="icons_label_full">Tam</string>
+    <string name="icons_label_minimal">Sade</string>
+    <string name="icons_group_nav">Navigasyon</string>
+    <string name="icons_btn_start">Başlangıç</string>
+    <string name="icons_btn_end">Bitiş</string>
+    <string name="icons_group_progress">İlerleme</string>
+    <string name="icons_btn_success">Başarılı</string>
+    <string name="icons_label_shape_title">Simge şekli</string>
+
+    <string name="shape_circle">Daire</string>
+    <string name="shape_square">Kare</string>
+    <string name="shape_cookie">Kurabiye</string>
+    <string name="shape_arch">Kemer</string>
+    <string name="shape_clover">Yonca</string>
+
+    <string name="calls_label_answer">Cevapla</string>
+    <string name="calls_label_decline">Reddet</string>
+
+    <string name="apps_empty">Ayarlanmış uygulama yok</string>
+
+    <string name="design_hero_customization_title">Özelleştirme</string>
+    <string name="design_hero_customization_subtitle">Tema oluşturmayı öğren</string>
+    <string name="design_hero_pro_title">Pro özellikler</string>
+    <string name="design_hero_pro_subtitle">Daha fazla güç aç</string>
+    <string name="design_hero_community_title">Topluluk</string>
+    <string name="design_hero_community_subtitle">GitHub\'da bize katıl</string>
+
+    <string name="design_section_themes">Temalar</string>
+    <string name="design_section_widgets">Widget\'lar</string>
+
+    <string name="design_browse_more">Daha fazlasına göz at</string>
+    <string name="design_add_new">Yeni ekle</string>
+    <string name="design_add_design">Tasarım ekle</string>
+    <string name="design_add_to_island">Özelleştirme</string>
+    <string name="design_system_widget_beta">Sistem widget\'ı (Beta)</string>
+    <string name="design_get_themes">Tema bul</string>
+    <string name="design_empty_widget_title">İlk widget\'ını ekle</string>
+    <string name="design">Tasarım</string>
+
+    <string name="creator_nav_actions">Genel eylemler</string>
+    <string name="creator_sub_actions">Düğmeleri kelimeye göre biçimlendir</string>
+    <string name="action_sheet_title">Eylemi yapılandır</string>
+    <string name="action_label_keyword">Anahtar kelime (ör. \'Yanıtla\')</string>
+    <string name="action_label_bg_color">Arka plan rengi</string>
+    <string name="action_label_tint_color">Simge/yazı rengi</string>
+    <string name="action_preview">Canlı önizleme</string>
+    <string name="action_mode_icon">Sadece simge</string>
+    <string name="action_mode_text">Yazı</string>
+    <string name="action_mode_both">İkisi de</string>
+    <string name="actions_empty_title">Özel eylem yok</string>
+    <string name="actions_empty_desc">Add rules to style notification buttons based on their text (e.g., \"Reply\", \"Archive\").</string>
+    <string name="action_default_preview_text">Eylem</string>
+
+    <string name="actions_search_hint">Eylem ara...</string>
+    <string name="actions_search_empty_fmt">No actions found for \"%1$s\"</string>
+
+    <string name="action_wip_warning">Bu özellik geliştirme aşamasında. Anahtar kelime eşleşmesi uygulamaların bildirimlerini nasıl hazırladığına bağlı, her uygulamada çalışmayabilir.</string>
+    <string name="creator_dialog_apply_title">Tema uygulansın mı?</string>
+    <string name="creator_dialog_apply_desc">Bu temayı şimdi uygulamak ister misin?</string>
+    <string name="creator_dialog_action_save_apply">Kaydet ve uygula</string>
+    <string name="creator_dialog_action_save_only">Sadece kaydet</string>
+    <string name="select_icon">Simge seç</string>
+    <string name="change_icon">Simgeyi değiştir</string>
+    <string name="action_add">Uygulama ekle</string>
+    <string name="apps_sheet_select_title">Uygulama seç</string>
+    <string name="edit_app">Uygulamayı düzenle</string>
+
+    <string name="creator_sub_colors_custom">Özel renk seti</string>
+    <string name="creator_sub_colors_default">Genel varsayılan kullanılıyor</string>
+
+    <string name="creator_sub_icons_custom">Özel şekil seti</string>
+    <string name="creator_sub_icons_default">Genel varsayılan kullanılıyor</string>
+    <string name="app_customization_desc">Görünümünü özel olarak ayarlamak için bir uygulama ekle.</string>
+    <string name="discard">Vazgeç</string>
+    <string name="unsaved_changes">Kaydedilmemiş değişiklikler</string>
+    <string name="unsaved_changes_desc">Bu uygulama için kaydedilmemiş değişikliklerin var. Çıkmadan önce kaydetmek ister misin?</string>
+    <string name="share_theme">Temayı paylaş</string>
+    <string name="my_theme">Temam</string>
+    <plurals name="creator_sub_actions_count">
+        <item quantity="one">%1$d özel eylem</item>
+        <item quantity="other">%1$d özel eylem</item>
+    </plurals>
+
+    <string name="title_0_4_0">Özelleştirme güncellemesi</string>
+    <string name="changelog_0_4_0">        <b>Theme Engine 🎨</b>\n
+        The biggest update yet! You can now fully customize the Dynamic Island visual experience.\n
+        • <b>Theme Creator:</b> Design themes directly on your phone with real-time previews.\n
+        • <b>Granular Control:</b> Choose exactly how icons are shown, customize call notification colors and shapes, and configure individual app overrides.\n
+        • <b>Smart Colors:</b> Automatically extract vibrant brand colors from app icons.\n
+        • <b>Per-Action Customization (Beta):</b> Fine-tune the look of specific notification actions.\n
+        • <b>Sharing:</b> Export and import themes as portable <i>.hbr</i> packages.\n\n
+
+        <b>Widget Support 🧩</b>\n
+        Pin standard Android widgets to the island for quick access—even on your <b>Lockscreen</b>!\n
+        • Choose between <b>Interactive</b> mode for speed or <b>Snapshot</b> mode for battery efficiency.\n\n
+
+        <b>Notification Engine 2.0 ⚡</b>\n
+        A complete rewrite of the core logic for better stability:\n
+        • <b>Smarter Parsing:</b> Fixed issues where notifications showed package names (e.g., com.whatsapp) instead of message content.\n
+        • <b>Anti-Flicker:</b> New content hashing prevents redundant updates and stuttering.\n
+        • <b>Ghost Fixes:</b> Solved race conditions where islands lingered after dismissal.\n\n
+
+        <b>Visual Refresh ✨</b>\n
+        • Redesigned \"Design\" tab with fluid, native-feeling carousels.\n
+        • New \"Text Pill\" buttons for clearer notification actions.\n
+        • Added support for 🇮🇩 Indonesian and 🇹🇷 Turkish.\n\n
+
+        <i>Note: This release includes significant architectural changes. Please report any bugs on GitHub!</i>
+    </string>
+    <string name="title_0_4_2">Hızlı düzeltme güncellemesi</string>
+    <string name="changelog_0_4_2">        •&lt;b&gt;Crash Fix:&lt;/b&gt; Resolved a critical issue that caused the app to crash when opening the settings menu in Traditional Chinese.\n
+        •&lt;b&gt;Under the Hood:&lt;/b&gt; General bug fixes and stability improvements to keep your Island running smoothly.
+    </string>
+
+    <string name="colors_label_hue">Ton</string>
+    <string name="colors_label_saturation">Doygunluk</string>
+    <string name="colors_label_lightness">Parlaklık</string>
+    <string name="colors_label_dynamic_modes">Dinamik renkler</string>
+    <string name="colors_label_material_you">Material You (Sistem)</string>
+    <string name="colors_desc_material_you">Renkleri mevcut duvar kâğıdından alır.</string>
+
+    <string name="kill_all_widgets">Aktif widget\'ları kapat</string>
+    <string name="permission_reminder_title">Güncelleme notu</string>
+    <string name="permission_reminder_desc">HyperBridge güncellendi! Widget\'larının sorunsuz çalışması için Otomatik başlatma ve arka plan pil izinlerinin sistem tarafından sessizce kaldırılmadığından emin ol.</string>
+    <string name="got_it">Anladım</string>
+
+    <string name="recommended">Önerilen</string>
+    <string name="all">Tümü</string>
+    <string name="favorites">Favoriler</string>
+
+    <string name="channel_live_updates">Yerel canlı güncellemeler</string>
+
+    <string name="engine_preview_title">Önizleme</string>
+    <string name="engine_design_section">Bildirim tasarımı</string>
+    <string name="engine_xiaomi_title">Xiaomi öne çıkan tasarım</string>
+    <string name="engine_xiaomi_desc">Xiaomi\'nin öngördüğü modern HyperOS düzeni.</string>
+    <string name="engine_native_title">Canlı güncelleme tasarımı</string>
+    <string name="engine_native_desc">Yerel Android bildirim tasarımları, CN ROM\'da çalışır.</string>
+
+    <string name="engine_config_title">Motor yapılandırması</string>
+    <string name="engine_section_design">Bildirim tasarımı</string>
+    <string name="good_to_know">Bilmekte fayda var</string>
+    <string name="nav_layout_info">• Navigasyon düzenleri yakında Tema motoruna tamamen entegre edilecek.\n• Yerel canlı güncelleme motoru kullanılırken sadece sağ taraftaki içerik görünür.</string>
+    <string name="xiaomi_featured_notifications">Xiaomi öne çıkan bildirimler</string>
+    <string name="island_behavior_title">Ada davranışı</string>
+    <string name="island_behavior_desc"><![CDATA[Süreler, kopyalar ve görünürlük]]></string>
+    <string name="engine">Motor</string>
+    <string name="engine_desc">Canlı güncellemeler veya Xiaomi adası</string>
+    
+    <string name="dnd_mode_title">Rahatsız etmeyin</string>
+    <string name="dnd_mode_desc">Rahatsız etmeyin modunda adanın görünürlüğünü yönet</string>
+    <string name="dnd_manual_toggle">Adaları duraklat</string>
+    <string name="dnd_manual_toggle_desc">Tekrar açana kadar tüm adaları elle duraklat</string>
+    <string name="dnd_auto_detect">Sistemin Rahatsız etmeyin modunu algıla</string>
+    <string name="dnd_auto_detect_desc">Telefon Rahatsız etmeyin modundayken adaları otomatik duraklat</string>
+    <string name="behaviour_triggers"><![CDATA[Davranış ve tetikleyiciler]]></string>
+    <string name="engine_timeouts_triggers"><![CDATA[Motor, süreler ve tetikleyiciler]]></string>
+    <string name="global_behavior">Genel davranış</string>
+    <string name="auto_hide_island">Adayı otomatik gizle</string>
+    <string name="hides_after_a_set_time">Belirli süre sonra gizlenir</string>
+    <string name="behavior_hide_desc">Elle kapatılana kadar görünür</string>
+    <string name="behavior_desc_hide_long">Adanın otomatik kaybolmadan önce ekranda ne kadar kalacağını belirler.</string>
+    <string name="active_triggers">Aktif tetikleyiciler</string>
+    <string name="active_triggers_global_desc">Adayı hangi genel olayların açacağını seç</string>
+    <string name="type_standard_desc">Regular messages, emails, and alerts</string>
+    <string name="type_message_desc">Mesajlar, sohbetler ve konuşmalar</string>
+    <string name="type_progress_desc">Devam eden görevler, işlemler</string>
+    <string name="type_download_desc">İndirmeler, yüklemeler ve dosya aktarımları</string>
+    <string name="type_media_desc">Müzik ve video oynatma kontrolleri</string>
+    <string name="type_nav_desc">Adım adım yol tarifi ve varış süresi</string>
+    <string name="type_call_desc">Gelen ve devam eden aramalar</string>
+    <string name="type_timer_desc">Aktif zamanlayıcılar ve kronometreler</string>
+    <string name="select_triggered_events">Tetikleyici olayları seç</string>
+    <string name="override_global_triggers">Genel tetikleyicileri geçersiz kıl</string>
+    <string name="override_global_trigger_desc">Bu uygulama için izin verilen bildirimleri ayrıca belirle</string>
+    <string name="trigger_override">Tetikleyici ayarı</string>
+    <string name="trigger_app_desc">Bu uygulama için adayı hangi olayların açacağını seç.</string>
+    <string name="enable_triggers">Belirli tetikleyicileri aç</string>
+    <string name="open_source_licenses">Açık kaynak lisansları</string>
+    <string name="remove_original_notification">Orijinal bildirimi kaldır</string>
+    <string name="remove_original_notification_desc">Canlı güncelleme aktifken kaynak bildirimi otomatik kaldır.</string>
+    <string name="dismiss_with_original">Orijinalle birlikte kapat</string>
+    <string name="dismiss_with_original_desc">Orijinal bildirimi temizlediğinde ada da kaybolur.</string>
+    <string name="enable_inline_reply">Satır içi yanıtı aç</string>
+    <string name="enable_inline_reply_desc">Adadan yanıtlarken özel satır içi yanıt penceresini aç.</string>
+    <string name="remove_original_notification_hidden_warning">Not: Açıkken Hyper Bridge mesajlara yanıt veremez veya okundu olarak işaretleyemez. Yanıtla ve Okundu işaretle eylemleri gizlenir.</string>
+    
+    <string name="color_mode">Renk modu</string>
+    <string name="color_mode_select">Renk modunu seç</string>
+    <string name="color_mode_change_cd">Renk modunu değiştir</string>
+    <string name="color_mode_default">Varsayılan</string>
+    <string name="color_mode_default_desc">Standart varsayılan renkleri kullan</string>
+    <string name="color_mode_app">Uygulama renkleri</string>
+    <string name="color_mode_app_desc">Renkleri uygulama simgesinden al</string>
+    <string name="color_mode_material">Material You</string>
+    <string name="color_mode_material_desc">Sistem duvar kâğıdına uydur (Monet)</string>
+    <string name="color_mode_custom">Özel renkler</string>
+    <string name="color_mode_custom_desc">Renkleri kendin seç</string>
+    
+    <string name="reply_textfield_color">Yazı kutusu rengi</string>
+    <string name="reply_textfield_color_desc">İç yazı kutusunun arka planı</string>
+    <string name="reply_text_color">Yazı rengi</string>
+    <string name="reply_text_color_desc">Yanıt yazısının rengi</string>
+    <string name="reply_send_color">Gönder düğmesi rengi</string>
+    <string name="reply_send_color_desc">Gönder simgesinin rengi</string>
+    
+    <string name="reply_appearance">Görünüm</string>
+    <string name="reply_blur_effect">Bulanıklık efekti</string>
+    <string name="reply_blur_effect_desc">Yazı kutusuna buzlu cam efekti uygula</string>
+    <string name="reply_textfield_radius">Yazı kutusu köşe yuvarlaklığı</string>
+    <string name="reply_send_radius">Gönder düğmesi köşe yuvarlaklığı</string>
+    
+    <string name="onboarding_can_be_changed">Bu seçenekleri daha sonra Ayarlar\'dan ve Tema yapılandırıcısından değiştirebilirsin.</string>
+    <string name="onboarding_widget_desc">Hızlı erişim için adana standart Android widget\'ları ekle.</string>
+    <string name="onboard_theme_desc">Adanın renklerini, şekillerini ve simgelerini tamamen özelleştir.</string>
+    <string name="onboard_design_desc">Farklı özelleştirme seçenekleriyle olanakları genişlet</string>
+    <string name="behavior_desc_glob_config">Adanın nasıl davranacağını belirler.</string>
+    <string name="widget_layout_snapshot">Widget önizlemesi</string>
+
+    <string name="changelog_0_5_7">
+        <b>Optimizations &amp; Fixes</b>\n
+              • <b>Code Optimization:</b> Upgraded to the latest Android Gradle Plugin and enabled R8 code shrinking for a smaller, faster app.\n
+              • <b>Stability:</b> Improved notification synchronization and fixed an issue where original notifications were sometimes prematurely dismissed (PR #258).\n
+    </string>
+    <string name="title_0_5_7">Performans ve senkronizasyon güncellemesi</string>
+
+    <string name="changelog_0_5_6">
+        <b>Fixes &amp; Improvements</b>\n
+              • <b>System UI Stability:</b> Validated highlightColor before passing to SystemUI to prevent crashes.\n
+              • <b>Permanent Island Behavior:</b> Fixed an issue where the permanent island disappeared after notifications or unlock.\n
+              • <b>Landscape Mode:</b> Added an option to hide the Permanent Island in landscape orientation.\n
+    </string>
+    <string name="title_0_5_6">Yatayda gizleme ve kararlılık düzeltmeleri</string>
+
+    <string name="changelog_0_5_5">
+        <b>Live Updates &amp; Islands</b>\n
+              • <b>Icons:</b> Fixed an issue where the original app icon wouldn\'t display properly on Android 16 Live Updates.\n
+              • <b>Inline Replies:</b> You can now use inline replies directly from Live Update notifications.\n
+              • <b>Island Removal:</b> Fixed an issue where islands were not being properly removed when dismissed.\n\n
+        <b>Messaging Grouping Overhaul</b>\n
+              • <b>Deduplication:</b> Completely reworked how messaging-style notifications (like WhatsApp) are grouped to prevent duplicated islands.\n\n
+        <b>Fixes &amp; Stability</b>\n
+              • <b>Update Migration:</b> Fixed a critical bug where updating the app wouldn\'t trigger the proper database migration logic.\n
+              • <b>Defaults:</b> Disabled "Show in shade" by default on the onboarding screen.\n
+              • <b>Localization:</b> Resolved broken characters in translated strings.\n
+    </string>
+    <string name="title_0_5_5">Mesajlaşma ve güncelleme düzeltmeleri</string>
+
+    <string name="changelog_0_5_2">        <b>Play Store Crash Fixes &amp; Stability</b>\n
+              ? <b>Theme Creator:</b> Fixed a crash when parsing large sets of custom assets.\n
+              ? <b>Performance:</b> Resolved an ANR (Application Not Responding) issue on the initial Welcome Screen.\n
+              ? <b>Widget Picker:</b> Eliminated crashes and Out-Of-Memory (OOM) errors caused by extremely large widget previews.\n
+              ? <b>UI Layouts:</b> Fixed Jetpack Compose layout constraint exceptions that crashed the app when resizing certain menus.\n
+              ? <b>Backups:</b> Resolved OOM errors when importing large backup files by optimizing JSON parsing.\n
+              ? <b>Warm Starts:</b> Significantly improved app launch speeds and eliminated UI thread blocking on mid-range devices.\n
+              ? <b>Background Service:</b> Completely overhauled the Notification Listener memory architecture, dropping background overhead to 0% and improving battery life.\n
+    </string>
+    <string name="title_0_5_2">Performance &amp; Stability Update</string>
+
+    <string name="changelog_0_5_1">        <b>Fixes &amp; Stability</b>\n
+              WhatsApp Duplicates Fixed: Resolved an issue that caused duplicate WhatsApp notifications to appear.\n
+              Notification Flicker &amp; Crashes Fixed: Fixed a crash caused by receiving multiple notifications in a short timeframe. The app now safely updates notifications normally, eliminating the notification flicker and improving stability.\n
+              Notification Intents Restored: Fixed an issue where clicking a featured notification would incorrectly route to the troubleshooting screen instead of the original app.\n\n
+        <b>Features &amp; Polish</b>\n
+              Remove Island on Dismiss: Added a new option to automatically remove the island if the original system notification is dismissed.\n
+              Featured Notifications Diagnostics: Added a new check screen during Onboarding to verify if your Xiaomi device supports Featured Notifications and if the required permissions are enabled.\n
+              Setup Health Integration: The Featured Notifications permission status is now continuously monitored and displayed inside the Setup Health screen.\n
+              Troubleshooting Screen: Added a dedicated Troubleshooting Screen that guides users on how to enable the necessary hidden system permissions (or use Shizuku) to get islands working on strict Xiaomi ROMs.\n
+              Clearer Terminology: Renamed the \"Live Updates\" section in the settings menu to \"Notification Management\" to better reflect its purpose.\n
+              Settings UI Polish: Restored the missing rounded corners on the \"Permanent Island\" option in the Global Settings list.\n
+              Spanish Translations: Added full Spanish translations for all the new troubleshooting dialogues, setup health checks, and notification management settings.
+    </string>
+    <string name="title_0_5_1">Düzeltmeler ve iyileştirmeler</string>
+
+    <string name="changelog_0_5_0">        <b>CN ROM Support</b>\n
+            • Enable the new Sui &amp; Shizuku workaround to enjoy the Hyper Islands in your devices running HyperOS CN (Chinese) ROMs without native support.\n\n
+        <b>Theme Engine Improvements</b>\n
+            • Engine Selection: You can now choose animation engines per-app or globally.\n
+            • Shizuku Workaround: Toggle added directly to the Theme Editor Engine tab.\n
+            • Behavior Controls: Custom timeouts and popup logic are now fully supported.\n\n
+        <b>Intelligent Permanent Island</b>\n
+            • Always Visible: Keep the island on screen even without active notifications.\n
+            • Auto-Hide: The permanent island now automatically hides itself whenever an active widget is shown on the screen.\n\n
+        <b>Smart Icon Tinting</b>\n
+            • New detection system automatically analyzes extracted notification icons and intelligently tints them white if they are dark or monochrome.\n\n
+        <b>Downloads &amp; Progress</b>\n
+            • New Dedicated Download Layout: Separated download and progress layouts with dedicated visual designs.\n
+            • Text Progress Support: Parsed percentage text (e.g. \"12%\") for app updates even without native progress bars.\n
+            • Smart Filtering: Restricted text-based progress checking to store and installer downloads to prevent false triggers on other status notifications.\n\n
+        <b>Messaging Fixes</b>\n
+            • Fixed missing sender avatars in apps like Telegram (now correctly extracts \"sender_person\" data).\n
+            • Resolved issues with grouped notifications (chat summaries) not triggering islands.\n
+            • Fixed island disappearance bugs caused by notification update race conditions.\n\n
+        <b>System &amp; Onboarding</b>\n
+            • New Onboarding Screen: A brand new and easier setup process for critical permissions.\n
+            • Boot Fix: Service now starts immediately and reliably after restart.\n
+            • Smarter Alerts: Downloads and Media update silently, while messaging updates reliably trigger popup animations.\n
+            • Navigation: Faster and smoother app transitions.
+    </string>
+    <string name="title_0_5_0">Canlı güncelleme sürümü</string>
+    <string name="notification_went_wrong">If you are seeing this, something went wrong!</string>
+    <string name="widget_went_wrong">Bunu görüyorsan bir şeyler ters gitti! Sistem widget\'ı gösteremedi</string>
+    <string name="troubleshoot_featured_notification">Sorun gider</string>
+
+    <string name="featured_notifications_check">Öne çıkan bildirim kontrolü</string>
+    <string name="featured_notifications_check_desc">Sistemin HyperBridge adalarını göstermek için doğru ayarlanıp ayarlanmadığına bakalım.</string>
+    <string name="featured_notifications_not_supported">Desteklenmiyor</string>
+    <string name="featured_notifications_enabled">Açık</string>
+    <string name="featured_notifications_open_settings">Sistem ayarlarını aç</string>
+    <string name="featured_notifications_troubleshoot_title">Bu neden ada değil?</string>
+    <string name="featured_notifications_troubleshoot_desc">Xiaomi cihazın bildirimi yakaladı ama sistem ayarlarında izin kapalı olduğu için öne çıkan ada olarak gösteremedi.\n\nDüzeltmek için:\n1. \"Sistem ayarlarını aç\"a dokun\n2. \"Öne çıkan bildirimler\" (veya benzeri) seçeneğine in\n3. HyperBridge için aç.</string>
+    <string name="featured_notifications_shizuku_alternative">Alternatif: Shizuku ile atlatma</string>
+    <string name="featured_notifications_shizuku_desc">Sistemin bu ayarı göstermiyor veya kısıtlıysa Shizuku kurarak Xiaomi beyaz listesini tamamen atlayabilirsin. HyperBridge adaları Shizuku ile doğrudan gösterir.</string>
+
+    <string name="migration_title">HyperBridge güncellemesi</string>
+    <string name="migration_message">Veritabanı cihaz korumalı depolamaya taşınıyor…</string>
+    <string name="migration_complete">Güncelleme tamamlandı</string>
+
+    <string name="notification_management">Bildirim yönetimi</string>
+    <string name="inline_reply_title">Satır içi yanıt</string>
+    <string name="customize_inline_reply">Satır içi yanıt penceresini özelleştir</string>
+    <string name="reply_hint">Yanıtla...</string>
+
+    <string name="perm_display_title">Diğer uygulamaların üzerinde göster</string>
+    <string name="perm_display_onboard_desc">Özel satır içi yanıt penceresini göstermek için gerekli.</string>
+
+    <!-- Tr1Action: music island gestures -->
+    <string name="music_island_title">Müzik adası hareketleri</string>
+    <string name="music_island_desc">Şarkı değiştirmek için müzik adasını sola/sağa kaydır</string>
+    <string name="music_island_screen_desc">Müzik çalarken ada küçük kalır ve çalan şarkıyı gösterir. Sonraki şarkı için sola, önceki için sağa kaydır. Dokununca ada her zamanki gibi açılır.</string>
+    <string name="music_island_service_status">Hareket servisi</string>
+    <string name="music_island_service_on">Açık</string>
+    <string name="music_island_service_off">Kapalı – Erişilebilirlik ayarlarından HyperBridge\'i açmak için dokun</string>
+    <string name="music_island_restricted_hint">Anahtar gri görünüyorsa: Uygulama bilgisi → ⋮ → Kısıtlı ayarlara izin ver, sonra tekrar dene.</string>
+    <string name="music_island_swipe">Kaydırarak şarkı değiştir</string>
+    <string name="music_island_swipe_desc">Sola = sonraki, sağa = önceki</string>
+    <string name="music_island_invert">Yönü ters çevir</string>
+    <string name="music_island_invert_desc">Sola = önceki, sağa = sonraki</string>
+    <string name="music_island_show_area">Dokunma alanını göster</string>
+    <string name="music_island_show_area_desc">Kaydırma alanını pembe gösterir, adayla hizalamak için</string>
+    <string name="music_island_width">Dokunma alanı genişliği: %%%1$d</string>
+    <string name="music_island_height">Ek yükseklik: %1$d dp</string>
+    <string name="music_island_offset">Yatay kaydırma: %1$d dp</string>
+    <string name="music_island_a11y_desc">HyperBridge\'in müzik adasındaki sola/sağa kaydırmaları algılayıp şarkı değiştirmesini sağlar. Sadece adanın üstüne görünmez bir şerit çizer, ekran içeriğini okumaz.</string>
+    <string name="bulk_enable_title">Tüm uygulamaları aç</string>
+    <string name="bulk_disable_title">Tüm uygulamaları kapat</string>
+    <string name="bulk_toggle_desc">Şu an listelenen %1$d uygulamaya uygulanır (arama ve kategori filtresi dikkate alınır).</string>
+</resources>

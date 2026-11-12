@@ -203,7 +203,7 @@ fun EnginePreview(isNative: Boolean) {
                             Spacer(Modifier.width(8.dp))
                             Column(Modifier.weight(1f)) {
                                 Text("Alice", color = Color.White, fontSize = 18.sp, fontWeight = FontWeight.Bold)
-                                Text("Incoming Call", color = Color.White.copy(0.7f), fontSize = 12.sp)
+                                Text(androidx.compose.ui.res.stringResource(com.d4viddf.hyperbridge.R.string.call_incoming), color = Color.White.copy(0.7f), fontSize = 12.sp)
 
                             }
                             Box(Modifier

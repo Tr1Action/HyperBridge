@@ -98,7 +98,7 @@ fun NavCustomizationScreen(
                 )
         ) {
 
-            Text("Preview", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+            Text(androidx.compose.ui.res.stringResource(com.d4viddf.hyperbridge.R.string.engine_preview_title), style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
             Spacer(modifier = Modifier.height(16.dp))
 
             NavPreview(currentLeft, currentRight)
