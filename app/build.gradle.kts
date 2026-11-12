@@ -12,7 +12,8 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.d4viddf.hyperbridge"
+        // [Tr1Action] Own package name so it doesn't clash with the Play Store HyperBridge
+        applicationId = "com.tr1action.hyperbridge"
         minSdk = 35
         targetSdk = 37
         versionCode = 33
