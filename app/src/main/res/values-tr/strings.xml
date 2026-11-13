@@ -829,4 +829,6 @@
     <string name="bulk_enable_title">Tüm uygulamaları aç</string>
     <string name="bulk_disable_title">Tüm uygulamaları kapat</string>
     <string name="bulk_toggle_desc">Şu an listelenen %1$d uygulamaya uygulanır (arama ve kategori filtresi dikkate alınır).</string>
+    <string name="hide_original_popup">Orijinal açılır bildirimi gizle (root)</string>
+    <string name="hide_original_popup_desc">Orijinal bildirim sesini çalar ve bildirim panelinde kalır; sadece üstten düşen kutusu gizlenir, yerine ada görünür. Aramalara ve alarmlara dokunulmaz. «Orijinal bildirimi kaldır» kapalı olmalı.</string>
 </resources>

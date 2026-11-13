@@ -526,6 +526,13 @@ class NotificationReaderService : NotificationListenerService() {
             cancelNotification(originalKey)
         }
 
+        // 1b. Orijinal kalıyorsa: sesi çalsın, panelde dursun ama açılır kutusu çıkmasın (root)
+        if (config.removeOriginalNotification != true && sbn != null &&
+            (type == NotificationType.MESSAGE || type == NotificationType.STANDARD)
+        ) {
+            com.d4viddf.hyperbridge.util.PopupSuppressor.onIslandShown(this, sbn)
+        }
+
         // 2. Schedule timeout ONLY for Live Update notifications
         if (isLiveUpdate) {
             val timeoutSeconds = config.timeout ?: 0

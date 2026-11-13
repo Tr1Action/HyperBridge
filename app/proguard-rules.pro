@@ -42,3 +42,6 @@
 
 # Ensure our privileged service implementation is not stripped or renamed
 -keep class com.d4viddf.hyperbridge.integration.shizuku.PrivilegedServiceImpl { *; }
+
+# Root ile app_process üzerinden çalıştırılır
+-keep class com.d4viddf.hyperbridge.util.ChannelTool { *; }

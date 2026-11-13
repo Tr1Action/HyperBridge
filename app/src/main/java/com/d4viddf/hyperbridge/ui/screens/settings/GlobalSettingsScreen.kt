@@ -32,6 +32,8 @@ import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -130,8 +132,21 @@ fun GlobalSettingsScreen(
                 onClick = onPermanentIslandClick
             )
             Spacer(Modifier.height(16.dp))
-            
 
+            val context = androidx.compose.ui.platform.LocalContext.current
+            var hidePopup by androidx.compose.runtime.remember {
+                androidx.compose.runtime.mutableStateOf(com.d4viddf.hyperbridge.util.PopupSuppressor.isEnabled(context))
+            }
+            SettingsSwitchItem(
+                icon = Icons.Outlined.DoNotDisturbOn,
+                title = stringResource(R.string.hide_original_popup),
+                subtitle = stringResource(R.string.hide_original_popup_desc),
+                checked = hidePopup,
+                onCheckedChange = {
+                    hidePopup = it
+                    com.d4viddf.hyperbridge.util.PopupSuppressor.setEnabled(context, it)
+                }
+            )
         }
     }
 }

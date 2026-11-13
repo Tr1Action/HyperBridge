@@ -830,4 +830,6 @@
     <string name="bulk_enable_title">Enable all apps</string>
     <string name="bulk_disable_title">Disable all apps</string>
     <string name="bulk_toggle_desc">This applies to the %1$d apps currently listed (respects search and category filter).</string>
+    <string name="hide_original_popup">Hide the original pop-up (root)</string>
+    <string name="hide_original_popup_desc">The original notification keeps its sound and stays in the notification shade; only its pop-up is hidden and the island shows instead. Calls and alarms are not touched. Keep "Remove original notification" off.</string>
 </resources>
